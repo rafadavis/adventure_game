@@ -8,6 +8,7 @@ def play():
     while True:
         room = world.tile_at(player.x, player.y)
         print(room.intro_text())
+        room.modify_player(player)
         action_input = get_player_command()
 
         if action_input == 'n':
@@ -24,6 +25,9 @@ def play():
 
         elif action_input == 'i':
             player.print_inventory()
+
+        elif action_input == 'a':
+            player.attack()
             
         else:
             print("Invalid action!")
