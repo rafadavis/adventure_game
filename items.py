@@ -24,3 +24,7 @@ class RustySword(Weapon):
         self.description = "This sword is showing its age, " \
                             "but still has some fight in it."
         self.damage = 20
+
+
+# adding this comment for a git test
+# feel free to delete it whenever
